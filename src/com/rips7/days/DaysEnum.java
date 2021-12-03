@@ -7,7 +7,8 @@ import java.util.function.Function;
 
 public enum DaysEnum {
   DAY_1(Day1.class, "day1/", "example1and2", "part1and2", "part1and2", Utils::readLinesAsInt),
-  DAY_2(Day2.class, "day2/", "example1and2", "part1and2", "part1and2", Utils::readLines);
+  DAY_2(Day2.class, "day2/", "example1and2", "part1and2", "part1and2", Utils::readLines),
+  DAY_3(Day3.class, "day3/", "example1and2", "part1and2", "part1and2", Utils::readLines);
 
   private final Class<? extends Day<?>> dayClass;
 
@@ -50,12 +51,49 @@ public enum DaysEnum {
   }
 
   public void run() {
+    final String ANSI_YELLOW = "\u001B[33m";
+    final String ANSI_RED = "\u001B[31m";
+    final String ANSI_RESET = "\u001B[0m";
+
     try {
       Day<?> day = dayClass.getConstructor().newInstance();
+
+      System.out.println(
+          String.format(
+              ANSI_YELLOW + "\n--- Running %s ---\n" + ANSI_RESET, day.getClass().getSimpleName()));
+
+      long time;
+
+      System.out.println(ANSI_RED + "Example 1" + ANSI_RESET);
+      time = System.currentTimeMillis();
       day.runExample1();
+      System.out.println(
+          String.format(
+              ANSI_RED + "Example 1 took: %s ms\n" + ANSI_RESET,
+              (System.currentTimeMillis() - time)));
+
+      System.out.println(ANSI_RED + "Part 1" + ANSI_RESET);
+      time = System.currentTimeMillis();
       day.runPart1();
+      System.out.println(
+          String.format(
+              ANSI_RED + "Part 1 took: %s ms\n" + ANSI_RESET, (System.currentTimeMillis() - time)));
+
+      System.out.println(ANSI_RED + "Example 2" + ANSI_RESET);
+      time = System.currentTimeMillis();
       day.runExample2();
+      System.out.println(
+          String.format(
+              ANSI_RED + "Example 2 took: %s ms\n" + ANSI_RESET,
+              (System.currentTimeMillis() - time)));
+
+      System.out.println(ANSI_RED + "Part 2" + ANSI_RESET);
+      time = System.currentTimeMillis();
       day.runPart2();
+      System.out.println(
+          String.format(
+              ANSI_RED + "Part 2 took: %s ms\n" + ANSI_RESET, (System.currentTimeMillis() - time)));
+
     } catch (NoSuchMethodException
         | InstantiationException
         | IllegalAccessException

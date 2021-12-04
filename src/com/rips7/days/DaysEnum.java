@@ -8,7 +8,8 @@ import java.util.function.Function;
 public enum DaysEnum {
   DAY_1(Day1.class, "day1/", "example1and2", "part1and2", "part1and2", Utils::readLinesAsInt),
   DAY_2(Day2.class, "day2/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_3(Day3.class, "day3/", "example1and2", "part1and2", "part1and2", Utils::readLines);
+  DAY_3(Day3.class, "day3/", "example1and2", "part1and2", "part1and2", Utils::readLines),
+  DAY_4(Day4.class, "day4/", "example1and2", "part1and2", "part1and2", Utils::readLines);
 
   private final Class<? extends Day<?>> dayClass;
 

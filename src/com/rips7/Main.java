@@ -7,6 +7,7 @@ import java.util.Arrays;
 public class Main {
 
   public static void main(String[] args) {
-      Arrays.stream(DaysEnum.values()).forEach(DaysEnum::run);
+      DaysEnum.DAY_5.run();
+//      Arrays.stream(DaysEnum.values()).forEach(DaysEnum::run);
   }
 }

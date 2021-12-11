@@ -14,7 +14,8 @@ public enum DaysEnum {
   DAY_6(Day6.class, "day6/", "example1and2", "part1and2", "part1and2", Utils::readLines),
   DAY_7(Day7.class, "day7/", "example1and2", "part1and2", "part1and2", Utils::readLines),
   DAY_8(Day8.class, "day8/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_9(Day9.class, "day9/", "example1and2", "part1and2", "part1and2", Utils::readLines);
+  DAY_9(Day9.class, "day9/", "example1and2", "part1and2", "part1and2", Utils::readLines),
+  DAY_10(Day10.class, "day10/", "example1and2", "part1and2", "part1and2", Utils::readLines);
 
   private final Class<? extends Day<?>> dayClass;
 

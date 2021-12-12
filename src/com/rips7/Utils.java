@@ -4,8 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.List;
+import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public final class Utils {
 
@@ -23,6 +26,29 @@ public final class Utils {
 
   public static List<Integer> readLinesAsInt(final String finalName) {
     return readLines(finalName).stream().map(Integer::parseInt).collect(Collectors.toList());
+  }
+
+  public static <T> void loopThroughAndDo(
+      final T[][] array, final BiConsumer<Integer, Integer> rowColConsumer) {
+    IntStream.range(0, array.length)
+        .boxed()
+        .forEach(
+            row ->
+                IntStream.range(0, array[row].length)
+                    .boxed()
+                    .forEach(col -> rowColConsumer.accept(row, col)));
+  }
+
+  public static <T> void printArray(final T[][] array, final String delimiter) {
+    final String RESET = "\033[0m";  // Text Reset
+    final String RED = "\033[0;31m";     // RED
+
+    System.out.println(
+        Arrays.stream(array)
+            .map(
+                row ->
+                    Arrays.stream(row).map(elt -> (int) elt != 0 ? String.valueOf(elt) : RED + elt + RESET).collect(Collectors.joining(delimiter)))
+            .collect(Collectors.joining("\n")));
   }
 
   static final class ProgressBar {

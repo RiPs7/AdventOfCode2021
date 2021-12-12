@@ -40,15 +40,17 @@ public final class Utils {
   }
 
   public static <T> void printArray(final T[][] array, final String delimiter) {
-    final String RESET = "\033[0m";  // Text Reset
-    final String RED = "\033[0;31m";     // RED
-
     System.out.println(
         Arrays.stream(array)
             .map(
                 row ->
-                    Arrays.stream(row).map(elt -> (int) elt != 0 ? String.valueOf(elt) : RED + elt + RESET).collect(Collectors.joining(delimiter)))
+                    Arrays.stream(row).map(String::valueOf).collect(Collectors.joining(delimiter)))
             .collect(Collectors.joining("\n")));
+  }
+
+  public static <T> void printList(final List<T> list, final String delimiter) {
+    System.out.println(
+        list.stream().map(String::valueOf).collect(Collectors.joining(delimiter)));
   }
 
   static final class ProgressBar {

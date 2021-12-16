@@ -83,4 +83,4 @@ element?
 
 Your puzzle answer was 2360298895777.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

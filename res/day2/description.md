@@ -72,4 +72,4 @@ following the planned course. What do you get if you multiply your final horizon
 
 Your puzzle answer was 1451210346.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

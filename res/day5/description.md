@@ -87,4 +87,4 @@ Consider all of the lines. At how many points do at least two lines overlap?
 
 Your puzzle answer was 19081.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

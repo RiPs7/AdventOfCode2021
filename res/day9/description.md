@@ -91,4 +91,4 @@ What do you get if you multiply together the sizes of the three largest basins?
 
 Your puzzle answer was 1123524.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

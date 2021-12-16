@@ -74,4 +74,4 @@ escape route! How much fuel must they spend to align to that position?
 
 Your puzzle answer was 95851339.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

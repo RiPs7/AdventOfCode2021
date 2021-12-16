@@ -156,4 +156,4 @@ Your puzzle answer was LKREBPRK.
 # # # # . # . . # . # . . # . # # # # . # # # . . # . . . . # . . # . # . . # .
 ```
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

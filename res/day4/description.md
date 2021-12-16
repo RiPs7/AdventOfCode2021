@@ -94,4 +94,4 @@ Figure out which board will win last. Once it wins, what would its final score b
 
 Your puzzle answer was 17388.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

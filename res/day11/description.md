@@ -369,4 +369,4 @@ through the cavern. What is the first step during which all octopuses flash?
 
 Your puzzle answer was 476.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

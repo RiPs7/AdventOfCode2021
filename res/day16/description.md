@@ -166,4 +166,4 @@ What do you get if you evaluate the expression represented by your hexadecimal-e
 
 Your puzzle answer was 4358595186090.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

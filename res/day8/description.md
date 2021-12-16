@@ -151,4 +151,4 @@ if you add up all of the output values?
 
 Your puzzle answer was 1055164.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

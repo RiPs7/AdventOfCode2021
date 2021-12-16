@@ -160,4 +160,4 @@ middle score?
 
 Your puzzle answer was 1605968119.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

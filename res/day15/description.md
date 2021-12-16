@@ -188,4 +188,4 @@ Using the full map, what is the lowest total risk of any path from the top left 
 
 Your puzzle answer was 2835.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

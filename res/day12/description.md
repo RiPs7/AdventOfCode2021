@@ -179,4 +179,4 @@ Given these new rules, how many paths through this cave system are there?
 
 Your puzzle answer was 116985.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: 🌟🌟

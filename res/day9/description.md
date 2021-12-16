@@ -35,7 +35,7 @@ Find all of the low points on your heightmap. What is the sum of the risk levels
 
 Your puzzle answer was 526.
 
-## --- Part Two ---
+## --- Part 2 ---
 Next, you need to find the largest basins so you know what areas are most important to avoid.
 
 A basin is all locations that eventually flow downward to a single low point. Therefore, every low point has a basin,

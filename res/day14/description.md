@@ -70,7 +70,7 @@ element?
 
 Your puzzle answer was 2194.
 
-## --- Part Two ---
+## --- Part 2 ---
 The resulting polymer isn't nearly strong enough to reinforce the submarine. You'll need to run more steps of the pair
 insertion process; a total of 40 steps should do it.
 

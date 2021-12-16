@@ -87,7 +87,7 @@ In the output values, how many times do digits 1, 4, 7, or 8 appear?
 
 Your puzzle answer was 495.
 
-## --- Part Two ---
+## --- Part 2 ---
 Through a little deduction, you should now be able to determine the remaining digits. Consider again the first example
 above:
 

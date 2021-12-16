@@ -20,7 +20,8 @@ public enum DaysEnum {
   DAY_12(Day12.class, "day12/", "example1and2", "part1and2", "part1and2", Utils::readLines),
   DAY_13(Day13.class, "day13/", "example1and2", "part1and2", "part1and2", Utils::readLines),
   DAY_14(Day14.class, "day14/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_15(Day15.class, "day15/", "example1and2", "part1and2", "part1and2", Utils::readLines);
+  DAY_15(Day15.class, "day15/", "example1and2", "part1and2", "part1and2", Utils::readLines),
+  DAY_16(Day16.class, "day16/", "example1and2", "part1and2", "part1and2", Utils::readLines);
 
   private final Class<? extends Day<?>> dayClass;
 
@@ -62,6 +63,7 @@ public enum DaysEnum {
     return argumentSupplier;
   }
 
+  @SuppressWarnings("ConstantConditions")
   public void run() {
     final String ANSI_YELLOW = "\u001B[33m";
     final String ANSI_RED = "\u001B[31m";
@@ -74,37 +76,52 @@ public enum DaysEnum {
           String.format(
               ANSI_YELLOW + "\n--- Running %s ---\n" + ANSI_RESET, day.getClass().getSimpleName()));
 
+      final boolean runExample1 = true;
+      final boolean runPart1 = true;
+      final boolean runExample2 = true;
+      final boolean runPart2 = true;
+
       long time;
 
-      System.out.println(ANSI_RED + "Example 1" + ANSI_RESET);
-      time = System.currentTimeMillis();
-      day.runExample1();
-      System.out.println(
-          String.format(
-              ANSI_RED + "Example 1 took: %s ms\n" + ANSI_RESET,
-              (System.currentTimeMillis() - time)));
+      if (runExample1) {
+        System.out.println(ANSI_RED + "Example 1" + ANSI_RESET);
+        time = System.currentTimeMillis();
+        day.runExample1();
+        System.out.println(
+            String.format(
+                ANSI_RED + "Example 1 took: %s ms\n" + ANSI_RESET,
+                (System.currentTimeMillis() - time)));
+      }
 
-      System.out.println(ANSI_RED + "Part 1" + ANSI_RESET);
-      time = System.currentTimeMillis();
-      day.runPart1();
-      System.out.println(
-          String.format(
-              ANSI_RED + "Part 1 took: %s ms\n" + ANSI_RESET, (System.currentTimeMillis() - time)));
+      if (runPart1) {
+        System.out.println(ANSI_RED + "Part 1" + ANSI_RESET);
+        time = System.currentTimeMillis();
+        day.runPart1();
+        System.out.println(
+            String.format(
+                ANSI_RED + "Part 1 took: %s ms\n" + ANSI_RESET,
+                (System.currentTimeMillis() - time)));
+      }
 
-      System.out.println(ANSI_RED + "Example 2" + ANSI_RESET);
-      time = System.currentTimeMillis();
-      day.runExample2();
-      System.out.println(
-          String.format(
-              ANSI_RED + "Example 2 took: %s ms\n" + ANSI_RESET,
-              (System.currentTimeMillis() - time)));
+      if (runExample2) {
+        System.out.println(ANSI_RED + "Example 2" + ANSI_RESET);
+        time = System.currentTimeMillis();
+        day.runExample2();
+        System.out.println(
+            String.format(
+                ANSI_RED + "Example 2 took: %s ms\n" + ANSI_RESET,
+                (System.currentTimeMillis() - time)));
+      }
 
-      System.out.println(ANSI_RED + "Part 2" + ANSI_RESET);
-      time = System.currentTimeMillis();
-      day.runPart2();
-      System.out.println(
-          String.format(
-              ANSI_RED + "Part 2 took: %s ms\n" + ANSI_RESET, (System.currentTimeMillis() - time)));
+      if (runPart2) {
+        System.out.println(ANSI_RED + "Part 2" + ANSI_RESET);
+        time = System.currentTimeMillis();
+        day.runPart2();
+        System.out.println(
+            String.format(
+                ANSI_RED + "Part 2 took: %s ms\n" + ANSI_RESET,
+                (System.currentTimeMillis() - time)));
+      }
 
     } catch (NoSuchMethodException
         | InstantiationException

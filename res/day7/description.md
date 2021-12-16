@@ -45,7 +45,7 @@ spend to align to that position?
 
 Your puzzle answer was 335271.
 
-## --- Part Two ---
+## --- Part 2 ---
 The crabs don't seem interested in your proposed solution. Perhaps you misunderstand crab engineering?
 
 As it turns out, crab submarine engines don't burn fuel at a constant rate. Instead, each change of 1 step in horizontal

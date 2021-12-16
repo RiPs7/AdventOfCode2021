@@ -46,7 +46,7 @@ together. What is the power consumption of the submarine? (Be sure to represent 
 
 Your puzzle answer was 775304.
 
-## --- Part Two ---
+## --- Part 2 ---
 Next, you should verify the life support rating, which can be determined by multiplying the oxygen generator rating by
 the CO2 scrubber rating.
 

@@ -79,7 +79,7 @@ you choose that board?
 
 Your puzzle answer was 14093.
 
-## --- Part Two ---
+## --- Part 2 ---
 On the other hand, it might be wise to try a different strategy: let the giant squid win.
 
 You aren't sure how many bingo boards a giant squid could play at once, so rather than waste time counting its arms, the

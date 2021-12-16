@@ -39,7 +39,7 @@ multiply your final horizontal position by your final depth?
 
 Your puzzle answer was 1250395.
 
-## --- Part Two ---
+## --- Part 2 ---
 Based on your calculations, the planned course doesn't seem to make any sense. You find the submarine manual and
 discover that the process is actually slightly more complicated.
 

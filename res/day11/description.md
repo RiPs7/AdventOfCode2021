@@ -320,7 +320,7 @@ there after 100 steps?
 
 Your puzzle answer was 1717.
 
---- Part Two ---
+## --- Part 2 ---
 It seems like the individual flashes aren't bright enough to navigate. However, you might have a better option: the
 flashes seem to be synchronizing!
 

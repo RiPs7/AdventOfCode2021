@@ -97,7 +97,7 @@ score for those errors?
 
 Your puzzle answer was 392043.
 
-## --- Part Two ---
+## --- Part 2 ---
 Now, discard the corrupted lines. The remaining lines are incomplete.
 
 Incomplete lines don't have any incorrect characters - instead, they're missing some closing characters at the end of

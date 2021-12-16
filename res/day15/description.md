@@ -49,7 +49,7 @@ What is the lowest total risk of any path from the top left to the bottom right?
 
 Your puzzle answer was 363.
 
-## --- Part Two ---
+## --- Part 2 ---
 Now that you know how to find low-risk paths in the cave, you can try to find your way out.
 
 The entire cave is actually five times larger in both dimensions than you thought; the area you originally scanned is

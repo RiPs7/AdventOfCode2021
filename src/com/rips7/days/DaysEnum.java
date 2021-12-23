@@ -25,11 +25,14 @@ public enum DaysEnum {
   DAY_17(Day17.class, "day17/", "example1and2", "part1and2", "part1and2", Utils::readLines),
   DAY_18(Day18.class, "day18/", "example1and2", "part1and2", "part1and2", Utils::readLines),
   DAY_20(Day20.class, "day20/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_21(Day21.class, "day21/", "example1and2", "part1and2", "part1and2", Utils::readLines);
+  DAY_21(Day21.class, "day21/", "example1and2", "part1and2", "part1and2", Utils::readLines),
+  DAY_22(Day22.class, "day22/", "example1", "example2", "part1and2", "part1and2", Utils::readLines);
 
   private final Class<? extends Day<?>> dayClass;
 
-  private final String exampleFileName;
+  private final String example1FileName;
+
+  private final String example2FileName;
 
   private final String part1FileName;
 
@@ -40,19 +43,42 @@ public enum DaysEnum {
   DaysEnum(
       final Class<? extends Day<?>> dayClass,
       final String resourceDirectory,
-      final String exampleFileName,
+      final String example1and2FileName,
+      final String part1FileName,
+      final String part2FileName,
+      final Function<String, ?> argumentSupplier) {
+    this(
+        dayClass,
+        resourceDirectory,
+        example1and2FileName,
+        example1and2FileName,
+        part1FileName,
+        part2FileName,
+        argumentSupplier);
+  }
+
+  DaysEnum(
+      final Class<? extends Day<?>> dayClass,
+      final String resourceDirectory,
+      final String example1FileName,
+      final String example2FileName,
       final String part1FileName,
       final String part2FileName,
       final Function<String, ?> argumentSupplier) {
     this.dayClass = dayClass;
-    this.exampleFileName = resourceDirectory + exampleFileName;
+    this.example1FileName = resourceDirectory + example1FileName;
+    this.example2FileName = resourceDirectory + example2FileName;
     this.part1FileName = resourceDirectory + part1FileName;
     this.part2FileName = resourceDirectory + part2FileName;
     this.argumentSupplier = argumentSupplier;
   }
 
-  public String getExampleFileName() {
-    return exampleFileName;
+  public String getExample1FileName() {
+    return example1FileName;
+  }
+
+  public String getExample2FileName() {
+    return example2FileName;
   }
 
   public String getPart1FileName() {

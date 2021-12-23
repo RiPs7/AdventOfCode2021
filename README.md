@@ -24,3 +24,4 @@ Day | Description | Solution | Stars
 [Day 18](https://adventofcode.com/2021/day/18) | [Part 1 / 2](res/day18/description.md) | [Day18.java](src/com/rips7/days/Day18.java) | 🌟🌟
 [Day 20](https://adventofcode.com/2021/day/20) | [Part 1 / 2](res/day20/description.md) | [Day20.java](src/com/rips7/days/Day20.java) | 🌟🌟
 [Day 21](https://adventofcode.com/2021/day/21) | [Part 1 / 2](res/day21/description.md) | [Day21.java](src/com/rips7/days/Day21.java) | 🌟🌟
+[Day 22](https://adventofcode.com/2021/day/22) | [Part 1 / 2](res/day22/description.md) | [Day22.java](src/com/rips7/days/Day22.java) | 🌟🌟

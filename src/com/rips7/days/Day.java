@@ -11,14 +11,16 @@ import java.util.function.Function;
  */
 public abstract class Day<ARG_T> {
 
-  final String exampleFileName;
+  final String example1FileName;
+  final String example2FileName;
   final String part1FileName;
   final String part2FileName;
 
   final Function<String, ?> argumentSupplier;
 
   Day(final DaysEnum daysEnum) {
-    this.exampleFileName = daysEnum.getExampleFileName();
+    this.example1FileName = daysEnum.getExample1FileName();
+    this.example2FileName = daysEnum.getExample2FileName();
     this.part1FileName = daysEnum.getPart1FileName();
     this.part2FileName = daysEnum.getPart2FileName();
     this.argumentSupplier = daysEnum.getArgumentSupplier();
@@ -41,7 +43,7 @@ public abstract class Day<ARG_T> {
   /** Runs the first example with the implementation of Part 1. */
   @SuppressWarnings("unchecked")
   public void runExample1() {
-    part1((ARG_T) argumentSupplier.apply(exampleFileName));
+    part1((ARG_T) argumentSupplier.apply(example1FileName));
   }
 
   /** Runs Part 1 with the implementation of Part 1. */
@@ -53,7 +55,7 @@ public abstract class Day<ARG_T> {
   /** Runs the second example with the implementation of Part 2. */
   @SuppressWarnings("unchecked")
   public void runExample2() {
-    part2((ARG_T) argumentSupplier.apply(exampleFileName));
+    part2((ARG_T) argumentSupplier.apply(example2FileName));
   }
 
   /** Runs Part 2 with the implementation of Part 2. */

@@ -1,6 +1,6 @@
 package com.rips7.days;
 
-import com.rips7.Utils;
+import com.rips7.utils.Utils;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.function.Function;
@@ -26,7 +26,8 @@ public enum DaysEnum {
   DAY_18(Day18.class, "day18/", "example1and2", "part1and2", "part1and2", Utils::readLines),
   DAY_20(Day20.class, "day20/", "example1and2", "part1and2", "part1and2", Utils::readLines),
   DAY_21(Day21.class, "day21/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_22(Day22.class, "day22/", "example1", "example2", "part1and2", "part1and2", Utils::readLines);
+  DAY_22(Day22.class, "day22/", "example1", "example2", "part1and2", "part1and2", Utils::readLines),
+  DAY_23(Day23.class, "day23/", "example1", "example2", "part1", "part2", Utils::readLines);
 
   private final Class<? extends Day<?>> dayClass;
 

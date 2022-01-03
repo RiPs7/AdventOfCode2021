@@ -1,4 +1,4 @@
-package com.rips7;
+package com.rips7.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,6 +10,7 @@ import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+@SuppressWarnings("unused")
 public final class Utils {
 
   public static List<String> readLines(final String fileName) {
@@ -49,8 +50,7 @@ public final class Utils {
   }
 
   public static <T> void printList(final List<T> list, final String delimiter) {
-    System.out.println(
-        list.stream().map(String::valueOf).collect(Collectors.joining(delimiter)));
+    System.out.println(list.stream().map(String::valueOf).collect(Collectors.joining(delimiter)));
   }
 
   static final class ProgressBar {

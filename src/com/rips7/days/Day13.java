@@ -1,6 +1,6 @@
 package com.rips7.days;
 
-import com.rips7.Utils;
+import com.rips7.utils.Utils;
 
 import java.util.Arrays;
 import java.util.List;

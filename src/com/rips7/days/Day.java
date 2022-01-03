@@ -61,6 +61,6 @@ public abstract class Day<ARG_T> {
   /** Runs Part 2 with the implementation of Part 2. */
   @SuppressWarnings("unchecked")
   public void runPart2() {
-    part2((ARG_T) argumentSupplier.apply(part1FileName));
+    part2((ARG_T) argumentSupplier.apply(part2FileName));
   }
 }

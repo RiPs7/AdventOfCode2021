@@ -6,28 +6,29 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.function.Function;
 
 public enum DaysEnum {
-  DAY_1(Day1.class, "day1/", "example1and2", "part1and2", "part1and2", Utils::readLinesAsInt),
-  DAY_2(Day2.class, "day2/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_3(Day3.class, "day3/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_4(Day4.class, "day4/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_5(Day5.class, "day5/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_6(Day6.class, "day6/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_7(Day7.class, "day7/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_8(Day8.class, "day8/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_9(Day9.class, "day9/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_10(Day10.class, "day10/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_11(Day11.class, "day11/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_12(Day12.class, "day12/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_13(Day13.class, "day13/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_14(Day14.class, "day14/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_15(Day15.class, "day15/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_16(Day16.class, "day16/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_17(Day17.class, "day17/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_18(Day18.class, "day18/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_20(Day20.class, "day20/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_21(Day21.class, "day21/", "example1and2", "part1and2", "part1and2", Utils::readLines),
-  DAY_22(Day22.class, "day22/", "example1", "example2", "part1and2", "part1and2", Utils::readLines),
-  DAY_23(Day23.class, "day23/", "example1", "example2", "part1", "part2", Utils::readLines);
+  DAY_1(Day1.class, "day1/", "example1and2", "part1and2", Utils::readLinesAsInt),
+  DAY_2(Day2.class, "day2/", "example1and2", "part1and2", Utils::readLines),
+  DAY_3(Day3.class, "day3/", "example1and2", "part1and2", Utils::readLines),
+  DAY_4(Day4.class, "day4/", "example1and2", "part1and2", Utils::readLines),
+  DAY_5(Day5.class, "day5/", "example1and2", "part1and2", Utils::readLines),
+  DAY_6(Day6.class, "day6/", "example1and2", "part1and2", Utils::readLines),
+  DAY_7(Day7.class, "day7/", "example1and2", "part1and2", Utils::readLines),
+  DAY_8(Day8.class, "day8/", "example1and2", "part1and2", Utils::readLines),
+  DAY_9(Day9.class, "day9/", "example1and2", "part1and2", Utils::readLines),
+  DAY_10(Day10.class, "day10/", "example1and2", "part1and2", Utils::readLines),
+  DAY_11(Day11.class, "day11/", "example1and2", "part1and2", Utils::readLines),
+  DAY_12(Day12.class, "day12/", "example1and2", "part1and2", Utils::readLines),
+  DAY_13(Day13.class, "day13/", "example1and2", "part1and2", Utils::readLines),
+  DAY_14(Day14.class, "day14/", "example1and2", "part1and2", Utils::readLines),
+  DAY_15(Day15.class, "day15/", "example1and2", "part1and2", Utils::readLines),
+  DAY_16(Day16.class, "day16/", "example1and2", "part1and2", Utils::readLines),
+  DAY_17(Day17.class, "day17/", "example1and2", "part1and2", Utils::readLines),
+  DAY_18(Day18.class, "day18/", "example1and2", "part1and2", Utils::readLines),
+  DAY_20(Day20.class, "day20/", "example1and2", "part1and2", Utils::readLines),
+  DAY_21(Day21.class, "day21/", "example1and2", "part1and2", Utils::readLines),
+  DAY_22(Day22.class, "day22/", "example1", "example2", "part1and2", Utils::readLines),
+  DAY_23(Day23.class, "day23/", "example1", "example2", "part1", "part2", Utils::readLines),
+  DAY_24(Day24.class, "day24/", "example1and2", "part1and2", Utils::readLines);
 
   private final Class<? extends Day<?>> dayClass;
 
@@ -40,6 +41,22 @@ public enum DaysEnum {
   private final String part2FileName;
 
   private final Function<String, ?> argumentSupplier;
+
+  DaysEnum(
+      final Class<? extends Day<?>> dayClass,
+      final String resourceDirectory,
+      final String example1and2FileName,
+      final String part1and2FileName,
+      final Function<String, ?> argumentSupplier) {
+    this(
+        dayClass,
+        resourceDirectory,
+        example1and2FileName,
+        example1and2FileName,
+        part1and2FileName,
+        part1and2FileName,
+        argumentSupplier);
+  }
 
   DaysEnum(
       final Class<? extends Day<?>> dayClass,

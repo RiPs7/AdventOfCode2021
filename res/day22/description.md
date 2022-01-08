@@ -130,7 +130,7 @@ are on?
 
 Your puzzle answer was 546724.
 
-## --- Part Two ---
+## --- Part 2 ---
 Now that the initialization procedure is complete, you can reboot the reactor.
 
 Starting with all cubes off, run all of the reboot steps for all cubes in the reactor.

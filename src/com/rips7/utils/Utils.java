@@ -13,6 +13,18 @@ import java.util.stream.IntStream;
 @SuppressWarnings("unused")
 public final class Utils {
 
+  public static String readInput(final String fileName) {
+    try (final InputStream is = ClassLoader.getSystemClassLoader().getResourceAsStream(fileName)) {
+      if (is == null) throw new IOException();
+      try (InputStreamReader isr = new InputStreamReader(is);
+           BufferedReader reader = new BufferedReader(isr)) {
+        return reader.lines().collect(Collectors.joining("\n"));
+      }
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
+  }
+
   public static List<String> readLines(final String fileName) {
     try (final InputStream is = ClassLoader.getSystemClassLoader().getResourceAsStream(fileName)) {
       if (is == null) throw new IOException();
